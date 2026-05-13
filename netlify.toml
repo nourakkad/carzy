@@ -2,4 +2,8 @@
   command = "npm run build"
   publish = "out"
 
+# Static export (`next export`) writes HTML to `out`; @netlify/plugin-nextjs expects
+# `.next` SSR output unless this is set — otherwise the plugin fails post-build.
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
 
