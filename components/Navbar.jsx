@@ -31,7 +31,7 @@ const Navbar = () => (
       />
 
       <h2 className="font-extrabold text-[24px] leading-[30px] text-white ">
-        METAVERSUS
+        Crazy Beeez
       </h2>
       <Image
         src={menu}
