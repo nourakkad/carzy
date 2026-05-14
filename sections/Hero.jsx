@@ -25,7 +25,7 @@ const Hero = () => (
           variants={textVariant(1.2)}
           className="flex flex-row justify-center items-center"
         >
-          <h1 className={styles.heroHeadingThin}>Be Crazy Be creative</h1>
+          <h1 className={styles.heroHeadingThin}></h1>
 
         </motion.div>
       </div>
@@ -35,13 +35,12 @@ const Hero = () => (
         variants={slideIn("right", "tween", 0.2, 1)}
         className="relative w-full md:-mt-[20px] -mt-[12px] "
       >
-        <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-10 -top-[30px]" />
         <Image
           src={cover}
           alt="cover"
           placeholder="blur"
           priority
-          className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative "
+          className="w-full h-auto rounded-tl-[140px] z-10 relative"
         />
 
         <a href="#explore">

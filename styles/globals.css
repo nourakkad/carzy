@@ -11,27 +11,25 @@
   scroll-behavior: smooth;
 }
 
+.site-bg {
+  background: linear-gradient(
+    165deg,
+    #050506 0%,
+    #0f0f12 38%,
+    #080809 72%,
+    #030303 100%
+  );
+}
+
 .gradient-01 {
   background-image: linear-gradient(
     270deg,
-    hsl(295deg 76% 51%) 0%,
-    hsl(284deg 70% 73%) 26%,
-    hsl(257deg 70% 86%) 39%,
-    hsl(202deg 92% 90%) 50%,
-    hsl(215deg 77% 81%) 61%,
-    hsl(221deg 73% 70%) 74%,
-    hsl(220deg 76% 51%) 100%
+    hsl(0deg 0% 10%) 0%,
+    hsl(220deg 6% 14%) 35%,
+    hsl(0deg 0% 8%) 70%,
+    hsl(0deg 0% 12%) 100%
   );
   filter: blur(125px);
-}
-
-.hero-gradient {
-  background: linear-gradient(
-    97.86deg,
-    #a509ff 0%,
-    #34acc7 53.65%,
-    #a134c7 100%
-  );
 }
 
 .gradient-02 {
@@ -41,7 +39,7 @@
   top: 0px;
   right: 0px;
 
-  background: #7aebfb;
+  background: rgba(32, 32, 36, 0.85);
   filter: blur(190px);
 }
 
@@ -60,7 +58,7 @@
   left: 20%;
   top: 5%;
 
-  background: rgba(149, 66, 232, 0.35);
+  background: rgba(28, 28, 32, 0.55);
   filter: blur(175px);
   transform: rotate(-114.2deg);
 }
@@ -72,7 +70,7 @@
   left: 30%;
   top: 10%;
 
-  background: rgba(45, 72, 152, 0.75);
+  background: rgba(18, 18, 22, 0.72);
   filter: blur(200px);
   transform: rotate(-53.13deg);
 }
@@ -92,7 +90,7 @@
   left: 0px;
   top: 0px;
 
-  background: #8d39a3;
+  background: rgba(36, 36, 40, 0.75);
   filter: blur(175px);
 }
 
@@ -103,6 +101,6 @@
   left: 37%;
   bottom: 0;
 
-  background: #65c4fa;
+  background: rgba(42, 42, 48, 0.5);
   filter: blur(150px);
 }
