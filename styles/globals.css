@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@300;400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,40 +7,200 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Antonio", sans-serif;
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  color: #fff;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.locale-ar {
+  font-family: "Noto Sans Arabic", "Inter", system-ui, sans-serif;
+}
+
+/* Arabic: RTL text only — page layout stays LTR */
+body.locale-ar .locale-text {
+  direction: rtl;
+  text-align: right;
+  unicode-bidi: plaintext;
+}
+
+body.locale-ar .locale-text-center {
+  direction: rtl;
+  text-align: center;
+  unicode-bidi: plaintext;
+}
+
+body.locale-ar .locale-text ul,
+body.locale-ar ul.locale-text {
+  direction: rtl;
+  text-align: right;
+}
+
+body.locale-ar .locale-text li.flex,
+body.locale-ar li.locale-text-row {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+body.locale-en .locale-text {
+  direction: ltr;
+  text-align: left;
+}
+
+body.locale-en .locale-text-center {
+  direction: ltr;
+  text-align: center;
+}
+
+::selection {
+  background: rgba(255, 203, 28, 0.28);
+  color: #fff;
+}
+
 .site-bg {
-  background: linear-gradient(
-    165deg,
-    #050506 0%,
-    #0f0f12 38%,
-    #080809 72%,
-    #030303 100%
-  );
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 12% 8%,
+      rgba(255, 203, 28, 0.24) 0%,
+      rgba(255, 203, 28, 0.1) 18%,
+      transparent 42%
+    ),
+    radial-gradient(
+      circle at 88% 16%,
+      rgba(255, 203, 28, 0.2) 0%,
+      rgba(255, 203, 28, 0.08) 20%,
+      transparent 46%
+    ),
+    radial-gradient(
+      ellipse 120% 80% at 50% -15%,
+      rgba(255, 203, 28, 0.18) 0%,
+      rgba(255, 203, 28, 0.06) 36%,
+      transparent 64%
+    ),
+    radial-gradient(
+      ellipse 85% 60% at 98% 48%,
+      rgba(255, 203, 28, 0.14) 0%,
+      rgba(255, 203, 28, 0.05) 31%,
+      transparent 58%
+    ),
+    radial-gradient(
+      ellipse 72% 56% at 0% 76%,
+      rgba(255, 203, 28, 0.15) 0%,
+      rgba(255, 203, 28, 0.05) 34%,
+      transparent 62%
+    ),
+    linear-gradient(
+      165deg,
+      #050506 0%,
+      #0a0906 22%,
+      #11100b 42%,
+      #060608 62%,
+      #171307 82%,
+      #030303 100%
+    );
+  background-attachment: fixed;
+  background-size: 140% 140%, 150% 150%, 130% 130%, 160% 160%, 150% 150%, 100% 100%;
+  animation: luxuryGradientDrift 20s ease-in-out infinite alternate;
+}
+
+.site-bg::before,
+.site-bg::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.site-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+.site-bg::before {
+  background:
+    linear-gradient(
+      115deg,
+      transparent 0%,
+      rgba(255, 203, 28, 0.07) 26%,
+      transparent 39%,
+      transparent 62%,
+      rgba(255, 203, 28, 0.05) 78%,
+      transparent 100%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 203, 28, 0.02) 0px,
+      rgba(255, 203, 28, 0.02) 1px,
+      transparent 1px,
+      transparent 120px
+    );
+  mix-blend-mode: screen;
+  opacity: 0.65;
+}
+
+.site-bg::after {
+  background:
+    radial-gradient(
+      circle at 50% 22%,
+      rgba(255, 203, 28, 0.12) 0%,
+      transparent 28%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.38) 48%,
+      rgba(0, 0, 0, 0.72) 100%
+    );
+  opacity: 0.75;
+}
+
+@keyframes luxuryGradientDrift {
+  0% {
+    background-position: 0% 0%, 100% 0%, 50% 0%, 100% 45%, 0% 70%, 0% 0%;
+  }
+
+  100% {
+    background-position: 10% 6%, 88% 12%, 45% 8%, 92% 55%, 8% 84%, 0% 0%;
+  }
 }
 
 .gradient-01 {
   background-image: linear-gradient(
     270deg,
-    hsl(0deg 0% 10%) 0%,
-    hsl(220deg 6% 14%) 35%,
-    hsl(0deg 0% 8%) 70%,
-    hsl(0deg 0% 12%) 100%
+    rgba(255, 203, 28, 0.24) 0%,
+    rgba(255, 203, 28, 0.12) 32%,
+    rgba(22, 18, 7, 0.8) 66%,
+    rgba(255, 203, 28, 0.08) 100%
   );
   filter: blur(125px);
+  opacity: 0.9;
 }
 
 .gradient-02 {
   position: absolute;
-  width: 200px;
-  height: 438px;
-  top: 0px;
-  right: 0px;
+  width: min(440px, 72vw);
+  height: min(520px, 76vh);
+  top: -90px;
+  right: -120px;
 
-  background: rgba(32, 32, 36, 0.85);
-  filter: blur(190px);
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 203, 28, 0.24) 0%,
+      rgba(255, 203, 28, 0.09) 42%,
+      transparent 72%
+    );
+  filter: blur(110px);
+  opacity: 0.9;
 }
 
 .glassmorphism {
@@ -52,55 +212,120 @@
 }
 
 .gradient-03 {
+  pointer-events: none;
   position: absolute;
-  width: 404px;
-  height: 800px;
-  left: 20%;
-  top: 5%;
+  width: min(760px, 92vw);
+  height: min(920px, 130vh);
+  left: 4%;
+  top: -4%;
 
-  background: rgba(28, 28, 32, 0.55);
-  filter: blur(175px);
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(255, 203, 28, 0.18) 0%,
+      rgba(255, 203, 28, 0.07) 44%,
+      transparent 75%
+    );
+  filter: blur(150px);
+  opacity: 0.85;
   transform: rotate(-114.2deg);
 }
 
 .gradient-04 {
+  pointer-events: none;
   position: absolute;
-  width: 304px;
-  height: 100vh;
-  left: 30%;
-  top: 10%;
+  width: min(680px, 88vw);
+  height: min(980px, 125vh);
+  left: 18%;
+  top: -3%;
 
-  background: rgba(18, 18, 22, 0.72);
-  filter: blur(200px);
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(255, 203, 28, 0.16) 0%,
+      rgba(255, 203, 28, 0.06) 45%,
+      rgba(28, 26, 18, 0.18) 68%,
+      transparent 82%
+    );
+  filter: blur(165px);
+  opacity: 0.85;
   transform: rotate(-53.13deg);
 }
 
 .gradient-05 {
   background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.04) 0%,
-    rgba(255, 255, 255, 0) 100%
+    145deg,
+    rgba(255, 203, 28, 0.16) 0%,
+    rgba(255, 203, 28, 0.07) 26%,
+    rgba(255, 255, 255, 0.035) 56%,
+    rgba(255, 255, 255, 0.01) 100%
   );
+  box-shadow:
+    inset 0 1px 0 rgba(255, 203, 28, 0.12),
+    0 24px 80px rgba(0, 0, 0, 0.35);
 }
 
 .feedback-gradient {
+  pointer-events: none;
   position: absolute;
-  width: 200px;
-  height: 316px;
-  left: 0px;
-  top: 0px;
+  width: min(360px, 78vw);
+  height: 420px;
+  left: -80px;
+  top: -90px;
 
-  background: rgba(36, 36, 40, 0.75);
-  filter: blur(175px);
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 203, 28, 0.22) 0%,
+      rgba(255, 203, 28, 0.08) 46%,
+      transparent 74%
+    );
+  filter: blur(120px);
+  opacity: 0.9;
 }
 
 .footer-gradient {
+  pointer-events: none;
   position: absolute;
-  width: 500px;
-  height: 100px;
-  left: 37%;
-  bottom: 0;
+  width: min(900px, 96vw);
+  height: 260px;
+  left: 50%;
+  bottom: -120px;
 
-  background: rgba(42, 42, 48, 0.5);
-  filter: blur(150px);
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(255, 203, 28, 0.18) 0%,
+      rgba(255, 203, 28, 0.07) 45%,
+      transparent 78%
+    );
+  filter: blur(135px);
+  opacity: 0.85;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .site-bg {
+    background-attachment: scroll;
+    background-size: 180% 180%, 180% 180%, 170% 170%, 190% 190%, 180% 180%, 100% 100%;
+  }
+
+  .site-bg::before {
+    opacity: 0.4;
+  }
+
+  .gradient-02,
+  .gradient-03,
+  .gradient-04,
+  .feedback-gradient,
+  .footer-gradient {
+    filter: blur(95px);
+    opacity: 0.72;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-bg {
+    animation: none;
+  }
 }

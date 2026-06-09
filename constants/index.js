@@ -1,103 +1,40 @@
-import Planet_1 from "../public/planet-01.png";
-import Planet_2 from "../public/planet-02.png";
-import Planet_3 from "../public/planet-03.png";
-import Planet_4 from "../public/planet-04.png";
-import Planet_5 from "../public/planet-05.png";
-import Planet_6 from "../public/planet-01.png";
-import Planet_7 from "../public/planet-02.png";
-import Planet_8 from "../public/planet-03.png";
-import vrpano from "../public/vrpano.svg";
-import headset from "../public/headset.svg";
-import twitter from "../public/twitter.svg";
-import linkedin from "../public/linkedin.svg";
 import instagram from "../public/instagram.svg";
 import facebook from "../public/facebook.svg";
+import threads from "../public/threads.png";
+import youtube from "../public/youtube.svg";
 
-export const exploreWorlds = [
-  {
-    id: "world-1",
-    imgUrl: Planet_1,
-    title: "The Hogwarts",
-  },
-  {
-    id: "world-2",
-    imgUrl: Planet_2,
-    title: "The Upside Down",
-  },
-  {
-    id: "world-3",
-    imgUrl: Planet_3,
-    title: "Kadirojo Permai",
-  },
-  {
-    id: "world-4",
-    imgUrl: Planet_4,
-    title: "Paradise Island",
-  },
-  {
-    id: "world-5",
-    imgUrl: Planet_5,
-    title: "Hawkins Labs",
-  },
-];
+export {
+  servicesCatalog,
+  getServiceBySlug,
+  exploreWorlds,
+  insights,
+} from "./services";
 
-export const startingFeatures = [
-  "Find a world that suits you and you want to enter",
-  "Enter the world by reading Har Har Mahadev to be safe",
-  "No need to beat around the bush, just stay on the gas and have fun",
-];
-
-export const newFeatures = [
-  {
-    imgUrl: vrpano,
-    title: "A new world",
-    subtitle:
-      "we have the latest update with new world for you to try never mind",
-  },
-  {
-    imgUrl: headset,
-    title: "More realistic",
-    subtitle:
-      "In the latest update, your eyes are narrow, making the world more realistic than ever",
-  },
-];
-
-export const insights = [
-  {
-    imgUrl: Planet_6,
-    title: "The launch of the Metaverse makes Elon musk ketar-ketir",
-    subtitle:
-      "Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.",
-  },
-  {
-    imgUrl: Planet_7,
-    title: "7 tips to easily master the madness of the Metaverse",
-    subtitle:
-      "Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum",
-  },
-  {
-    imgUrl: Planet_8,
-    title: "With one platform you can explore the whole world virtually",
-    subtitle:
-      "Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem",
-  },
-];
+export { mainNavItems } from "./navigation";
 
 export const socials = [
   {
-    name: "twitter",
-    url: twitter,
+    id: "instagram",
+    href: "https://www.instagram.com/crazybeeez_?igsh=MW1sbDloMTJ1eXp4aQ==",
+    icon: instagram,
+    labelKey: "footer.social.instagram",
   },
   {
-    name: "linkedin",
-    url: linkedin,
+    id: "facebook",
+    href: "https://www.facebook.com/share/1JEeDC5r3j/",
+    icon: facebook,
+    labelKey: "footer.social.facebook",
   },
   {
-    name: "instagram",
-    url: instagram,
+    id: "threads",
+    href: "https://www.threads.com/@crazybeeez_",
+    icon: threads,
+    labelKey: "footer.social.threads",
   },
   {
-    name: "facebook",
-    url: facebook,
+    id: "youtube",
+    href: "https://youtube.com/@crazybeeez?si=rwlSyuyOmIGhbaZE",
+    icon: youtube,
+    labelKey: "footer.social.youtube",
   },
 ];

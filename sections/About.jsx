@@ -3,46 +3,80 @@ import { motion } from "framer-motion";
 import { TypingText } from "../components";
 import styles from "../styles";
 import { fadeIn, staggerContainer } from "../utils/motion";
+import { useI18n } from "../contexts/I18nContext";
 
-const About = () => (
-  <section className={`${styles.paddings} relative z-10`}>
-    <div className="gradient-02 z-0" />
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
-    >
-      <TypingText title="| About Metaversus" textStyles="text-center" />
+const yearStyle =
+  "mx-1 inline-flex rounded-full border border-[#ffcb1c]/30 bg-[#ffcb1c]/10 px-3 py-1 text-[#ffcb1c] shadow-[0_0_24px_rgba(255,203,28,0.18)]";
 
-      <motion.p
-        variants={fadeIn("up", "tween", 0.2, 1)}
-        className="mt-[10px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white "
+const renderWithYear = (text, year) => {
+  const [before, after] = text.split(year);
+
+  if (after === undefined) return text;
+
+  return (
+    <>
+      {before}
+      <span className={yearStyle}>{year}</span>
+      {after}
+    </>
+  );
+};
+
+const About = () => {
+  const { t } = useI18n();
+  const paragraphs = [
+    t("about.paragraph1"),
+    renderWithYear(t("about.paragraph2"), "2012"),
+    renderWithYear(t("about.paragraph3"), "2016"),
+    t("about.paragraph4"),
+  ];
+
+  return (
+    <section id="about" className={`${styles.paddings} relative z-10`}>
+      <div className="gradient-02 z-0" />
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col px-1`}
       >
-        <span className="font-extrabold text-white">Metaverse</span> is a new
-        thing in the future, where you can enjoy the virtual world by feeling
-        like it's really real, you can feel what you feel in this metaverse
-        world, because this is really the{" "}
-        <span className="font-extrabold text-white">
-          {" "}
-          madness of the metaverse{" "}
-        </span>{" "}
-        of today, using only{" "}
-        <span className="font-extrabold text-white"> VR </span> devices you can
-        easily explore the world you want, turn your dreams into reality. Let's{" "}
-        <span className="font-extrabold text-white">explore</span> the madness
-        of the metaverse by scrolling down
-      </motion.p>
+        <TypingText title={t("about.typing")} textStyles="text-center" />
 
-      <motion.img
-        variants={fadeIn("up", "tween", 0.3, 1)}
-        src="/arrow-down.svg"
-        alt="arrow-down"
-        className="w-[18px] h-[28px] object-contain mt-[28px] "
-      />
-    </motion.div>
-  </section>
-);
+        <motion.div
+          variants={fadeIn("up", "tween", 0.2, 1)}
+          className="relative mt-5 w-full max-w-[980px] overflow-hidden rounded-[36px] border border-[#ffcb1c]/15 bg-black/35 px-5 py-8 text-center shadow-[0_30px_120px_rgba(0,0,0,0.35)] backdrop-blur-md sm:px-10 sm:py-11 md:px-14 md:py-14"
+        >
+          <div className="pointer-events-none absolute inset-x-10 top-0 h-px bg-gradient-to-r from-transparent via-[#ffcb1c]/70 to-transparent" />
+          <div className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-[#ffcb1c]/10 blur-3xl" />
+          <div className="pointer-events-none absolute -bottom-28 -left-20 h-72 w-72 rounded-full bg-[#ffcb1c]/10 blur-3xl" />
+
+          <h2 className="relative font-bold text-[44px] leading-tight text-white sm:text-[64px] md:text-[76px]">
+            {t("about.title")}
+          </h2>
+          <div className="relative mx-auto mt-5 h-[3px] w-24 rounded-full bg-gradient-to-r from-transparent via-[#ffcb1c] to-transparent shadow-[0_0_24px_rgba(255,203,28,0.45)]" />
+
+          <div className="locale-text locale-text-center relative mx-auto mt-8 flex max-w-[820px] flex-col gap-5 sm:gap-6">
+            {paragraphs.map((paragraph, index) => (
+              <p
+                key={`about-paragraph-${index}`}
+                className="font-normal text-[18px] leading-[1.8] text-secondary-white sm:text-[22px] md:text-[24px]"
+              >
+                {paragraph}
+              </p>
+            ))}
+          </div>
+        </motion.div>
+
+        <motion.img
+          variants={fadeIn("up", "tween", 0.3, 1)}
+          src="/arrow-down.svg"
+          alt={t("about.arrowAlt")}
+          className="w-[18px] h-[28px] object-contain mt-[28px]"
+        />
+      </motion.div>
+    </section>
+  );
+};
 
 export default About;

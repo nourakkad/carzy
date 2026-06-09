@@ -1,11 +1,15 @@
 {
-  "name": "metaverse_modern_site_by_rohit",
-  "author": "Rohit Kumar Suman",
+  "name": "crazy-beeez",
+  "author": "Crazy Beeez",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "clean:next": "node -e \"try { require('fs').rmSync('.next', { recursive: true, force: true }); } catch (e) {}\"",
     "dev": "next dev",
+    "dev:clean": "npm run clean:next && next dev",
     "build": "next build && next export",
+    "build:static": "npm run clean:next && next build && next export",
+    "preview": "npx --yes serve out -l 3000",
     "start": "next start",
     "lint": "next lint"
   },

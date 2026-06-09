@@ -1,0 +1,281 @@
+{
+  "meta": {
+    "title": "Crazy Beeez — Creative Media Agency",
+    "description": "Full-service media agency specializing in animation, video production, graphic design, and digital marketing."
+  },
+  "common": {
+    "brand": "Crazy Beeez",
+    "contactUs": "Contact Us",
+    "menu": "Menu"
+  },
+  "nav": {
+    "language": "Language",
+    "logoAlt": "Crazy Beeez logo",
+    "menu": {
+      "about": "About Us",
+      "explore": "Explore Our Worlds",
+      "vision": "Vision & Goals",
+      "approach": "Our Approach",
+      "whoWeServe": "Who We Serve",
+      "services": "Services",
+      "whyUs": "Why Crazy Beeez?",
+      "close": "Close menu"
+    }
+  },
+  "hero": {
+    "tagline": "Be Crazy Be Cretive",
+    "coverAlt": "Creative media production",
+    "stampAlt": "Scroll to explore"
+  },
+  "about": {
+    "typing": "| Who We Are",
+    "title": "Crazy Beeez",
+    "paragraph1": "is a full-service media agency providing creative and strategic solutions in media production and digital marketing",
+    "paragraph2": "Since our establishment in 2012, we started as a passionate remote team with a clear vision: to create impactful content that connects brands with their audiences in a smart and effective way",
+    "paragraph3": "In 2016, we opened our headquarters in Damascus, marking the beginning of a larger expansion phase across the region and internationally",
+    "paragraph4": "Today, we proudly serve clients across multiple countries including Syria, Lebanon, Egypt, Turkey, UAE, Saudi Arabia, Kuwait, and the United States, with a deep understanding of the unique nature of each market",
+    "arrowAlt": "Scroll down"
+  },
+  "explore": {
+    "typing": "| Explore Our Worlds",
+    "titleLine1": "",
+    "titleLine2": ""
+  },
+  "servicePages": {
+    "backToHome": "Back to Home",
+    "overviewTitle": "Overview",
+    "whatWeOfferTitle": "What We Offer",
+    "portfolioTitle": "Our Work",
+    "portfolioPlaceholder": "Video coming soon",
+    "whyChooseUsTitle": "Why Choose Us",
+    "creativeProcessTitle": "Creative Process",
+    "stepLabel": "Step",
+    "exploreLabel": "Explore service details",
+    "ctaTitle": "Ready to start your project?",
+    "ctaBody": "Tell us about your goals and we will help you plan, produce, and launch content that delivers real impact.",
+    "ctaButton": "Start Your Project Now"
+  },
+  "services": {
+    "items": {
+      "animation": {
+        "title": "Animation",
+        "description": "Professional animation content production (2D & 3D) that tells stories, simplifies ideas, and captures attention.",
+        "page": {
+          "metaTitle": "Animation — Crazy Beeez",
+          "typing": "| Animation Service",
+          "overview": {
+            "1": "We transform ideas into vibrant visual worlds through professional animation productions that combine creativity, visual storytelling, and outstanding artistic quality.",
+            "2": "We create animation content for children featuring engaging characters and rich visual environments, while also producing animation projects for adults built around innovative concepts and meaningful messages that connect with target audiences.",
+            "3": "We support every stage of the project, from concept development, scriptwriting, character and environment design, to animation production and final delivery."
+          },
+          "whatWeOffer": {
+            "1": "2D Animation",
+            "2": "3D Animation",
+            "3": "Character Design",
+            "4": "Storyboarding",
+            "5": "Script Writing",
+            "6": "Children's Content",
+            "7": "Adult Animation Projects",
+            "8": "Motion Graphics"
+          },
+          "whyChooseUs": {
+            "1": "Specialized expertise in children's and adult animation audiences",
+            "2": "Full creative pipeline from concept development to final delivery",
+            "3": "Story-driven visuals with premium artistic and technical quality"
+          },
+          "process": {
+            "1": { "title": "Concept & Scriptwriting", "body": "We develop the idea, script, and creative direction aligned with your goals and audience." },
+            "2": { "title": "Design & Storyboarding", "body": "Characters, environments, and storyboards are crafted to bring the narrative to life." },
+            "3": { "title": "Animation & Delivery", "body": "We produce, review, and deliver platform-ready animation assets with quality assurance." }
+          }
+        }
+      },
+      "graphic": {
+        "title": "Graphic Design & Printing",
+        "description": "Integrated design and printing solutions that help brands build a strong and professional market presence.",
+        "page": {
+          "metaTitle": "Graphic Design & Printing — Crazy Beeez",
+          "typing": "| Graphic Design & Printing",
+          "overview": {
+            "1": "We provide integrated design and printing solutions that help brands build a strong and professional market presence.",
+            "2": "For us, design is not merely aesthetics; it is a strategic tool that strengthens brand identity, competitiveness, and audience impact.",
+            "3": "We have extensive experience in developing visual identities for companies and organizations across various industries, creating complete visual systems that reflect brand values and maintain consistency across communication channels.",
+            "4": "Our services include logo design, visual identity development, and brand guideline creation with a strong focus on quality, creativity, and professionalism.",
+            "5": "We also provide premium printing services, from business cards and brochures to folders, signage, and promotional materials.",
+            "6": "Our goal is to create a cohesive visual experience that builds trust, strengthens brand recognition, and increases market visibility."
+          },
+          "whatWeOffer": {
+            "1": "Logo Design",
+            "2": "Visual Identity",
+            "3": "Brand Guidelines",
+            "4": "Marketing Materials",
+            "5": "Brochures",
+            "6": "Business Cards",
+            "7": "Packaging Design",
+            "8": "Professional Printing"
+          },
+          "whyChooseUs": {
+            "1": "Strategic design thinking that goes beyond visual aesthetics",
+            "2": "Proven experience building complete visual identity systems",
+            "3": "Seamless design-to-print workflow with quality control at every stage"
+          },
+          "process": {
+            "1": { "title": "Brand Research & Strategy", "body": "We analyze your market, values, and goals to define a distinctive creative direction." },
+            "2": { "title": "Identity & Design Development", "body": "Logos, guidelines, and marketing materials are designed and refined with your approval." },
+            "3": { "title": "Print Production & Delivery", "body": "We manage professional printing and deliver polished materials that reflect your brand." }
+          }
+        }
+      },
+      "production": {
+        "title": "Production",
+        "description": "Comprehensive media production services built on quality, creativity, and professional execution.",
+        "page": {
+          "metaTitle": "Production — Crazy Beeez",
+          "typing": "| Production Service",
+          "overview": {
+            "1": "We provide comprehensive media production services built on quality, creativity, and professional execution.",
+            "2": "Our work includes commercials, documentaries, promotional videos, digital content, and media coverage produced according to the highest professional standards.",
+            "3": "We focus on creating content that reflects brand identity and strengthens market presence.",
+            "4": "Our role covers planning, preparation, filming, editing, and final production to ensure impactful results that achieve client objectives."
+          },
+          "whatWeOffer": {
+            "1": "Commercial Production",
+            "2": "Documentary Films",
+            "3": "Promotional Videos",
+            "4": "Digital Content",
+            "5": "Media Coverage",
+            "6": "Video Editing",
+            "7": "Creative Direction",
+            "8": "Post Production"
+          },
+          "whyChooseUs": {
+            "1": "End-to-end production with cinematic quality and creative direction",
+            "2": "Professional crew and equipment for diverse production formats",
+            "3": "Content that strengthens brand presence and delivers measurable impact"
+          },
+          "process": {
+            "1": { "title": "Planning & Pre-Production", "body": "We prepare scripts, locations, schedules, and production plans in close collaboration with you." },
+            "2": { "title": "Filming & Direction", "body": "Our team captures footage with professional standards and creative oversight on set." },
+            "3": { "title": "Editing & Final Delivery", "body": "Post-production, color grading, sound, and delivery-ready mastering for all platforms." }
+          }
+        }
+      },
+      "digital": {
+        "title": "Digital Marketing",
+        "description": "Integrated digital marketing strategies that combine creativity, analysis, and audience understanding for sustainable growth.",
+        "page": {
+          "metaTitle": "Digital Marketing — Crazy Beeez",
+          "typing": "| Digital Marketing",
+          "overview": {
+            "1": "We help companies and brands achieve sustainable growth through integrated digital marketing strategies that combine creativity, analysis, and audience understanding.",
+            "2": "Our services include social media management, marketing planning, content creation, digital design, advertising campaign management, and digital brand development.",
+            "3": "We work to increase reach, engagement, and brand awareness while building a strong digital presence that reflects brand values and objectives.",
+            "4": "We also develop brand-building strategies that contribute to increased sales and measurable business growth."
+          },
+          "whatWeOffer": {
+            "1": "Social Media Management",
+            "2": "Marketing Strategy",
+            "3": "Content Creation",
+            "4": "Digital Design",
+            "5": "Advertising Campaigns",
+            "6": "Brand Development",
+            "7": "Audience Growth",
+            "8": "Performance Analytics"
+          },
+          "whyChooseUs": {
+            "1": "Integrated strategy combining creative excellence and data-driven insight",
+            "2": "Full-service digital brand and campaign management",
+            "3": "Measurable growth with transparent reporting and continuous optimization"
+          },
+          "process": {
+            "1": { "title": "Strategy & Audience Research", "body": "We analyze your market, audience, and goals to build a focused digital marketing plan." },
+            "2": { "title": "Content & Campaign Execution", "body": "Creative content and advertising campaigns are launched across the right digital channels." },
+            "3": { "title": "Analytics & Optimization", "body": "Performance data guides ongoing refinement to maximize reach, engagement, and results." }
+          }
+        }
+      }
+    }
+  },
+  "getStarted": {
+    "typing": "| Vision & Goals",
+    "title": "Vision & Goals",
+    "visionTitle": "Our Vision:",
+    "visionBody": "To become the destination for every creator who wants to transform ideas into a stunning visual reality.",
+    "messageTitle": "Our Message:",
+    "messageBody": "Transforming every project into a masterpiece that leaves an unforgettable impression.",
+    "missionTitle": "Our Mission:",
+    "missionBody": "Providing solutions that help clients develop their businesses and achieve their marketing goals.",
+    "goalsTitle": "Our Goals:",
+    "goals": {
+      "1": "Delivering outstanding and comprehensive services in animation and visual identity fields.",
+      "2": "Achieving the highest levels of client satisfaction through creative and high-quality work.",
+      "3": "Building creative teams by supporting young talents and encouraging innovation and creativity.",
+      "4": "Strengthening clients' market presence through our innovative solutions.",
+      "5": "Building strategic partnerships with leading companies and brands.",
+      "6": "Delivering artistic work that inspires future generations."
+    }
+  },
+  "whatsNew": {
+    "typing": "| Our Approach",
+    "title": "",
+    "intro": "At Crazy Beeez, we believe partnerships are the foundation of success.",
+    "body": "We rely on a blend of creativity, analysis, and market understanding to deliver solutions that are:",
+    "points": {
+      "1": "Tailored to each client",
+      "2": "Based on clear objectives",
+      "3": "Measurable, achievable, and scalable"
+    }
+  },
+  "world": {
+    "typing": "| Who We Serve",
+    "title": "",
+    "intro": "We are proud of a strong track record of successful projects delivered for clients across markets worldwide, and we continue expanding through new partnerships built on trust, quality, and shared success.",
+    "audiences": {
+      "1": "Individuals and entrepreneurs",
+      "2": "Companies and institutions",
+      "3": "Laboratories and the industrial sector",
+      "4": "Content creators",
+      "5": "Schools and educational centers",
+      "6": "Children's channels (TV and digital)"
+    }
+  },
+  "insights": {
+    "typing": "| Our Services",
+    "title": "",
+    "intro": "From concept to execution, we deliver integrated creative and marketing solutions that transform ideas into impactful visual experiences and stories worth telling."
+  },
+  "feedback": {
+    "title": "Why Crazy Beeez?",
+    "items": {
+      "1": "Over 10 years of experience",
+      "2": "Regional and international presence",
+      "3": "A fully integrated multidisciplinary team",
+      "4": "Deep understanding of the Arabic content market",
+      "5": "Focus on results, not just execution"
+    },
+    "planetAlt": "Creative media production scene"
+  },
+  "footer": {
+    "headline": "From idea to execution, we produce content and digital strategies that create real impact.",
+    "cta": "Start Your Project Now",
+    "brand": "CRAZY BEEEZ",
+    "contactTitle": "Contact Information",
+    "contact": {
+      "locationLabel": "Location",
+      "locationValue": "Damascus, Al-Baramkeh",
+      "phoneLabel": "Phone",
+      "phoneValue": "+9639 972 632 61",
+      "emailLabel": "Email",
+      "emailValue": "info@crazybeeez.com"
+    },
+    "copyright": "© 2026 Crazy Beeez. All rights reserved.",
+    "poweredByPrefix": "Powered by ",
+    "poweredByBrand": "Elyptek®",
+    "social": {
+      "instagram": "Follow Crazy Beeez on Instagram",
+      "facebook": "Follow Crazy Beeez on Facebook",
+      "threads": "Follow Crazy Beeez on Threads",
+      "youtube": "Follow Crazy Beeez on YouTube"
+    }
+  }
+}
